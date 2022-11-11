@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.log.orig
 
 # BlueJ files
 *.ctxt
@@ -24,7 +25,7 @@ hs_err_pid*
 replay_pid*
 
 # Idea folder
-.idea
+*.idea
 
 # Out folder
-out
+*out
