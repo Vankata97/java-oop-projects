@@ -1,0 +1,42 @@
+Salads|Caprese|3.50|300
+Salads|Ceaser|4.00|350
+Salads|Greek|3.50|300
+Salads|Shopska|3.50|400
+Main dishes|Fried potatoes|3.40|200
+Main dishes|Spaghetti|5.00|350
+Main dishes|Pizza|7.50|500
+Main dishes|Lasagne|6.00|250
+Main dishes|Beef steak|7.80|250
+Main dishes|Chicken steak|6.00|250
+Main dishes|Chicken soup|3.00|350
+Main dishes|Burger|8.00|300
+Dessert|Cheese cake|5.00|120
+Dessert|Pancake|6.50|130
+Dessert|Ice cream|4.50|150
+Soft drinks|Coca Cola|2.00|330
+Soft drinks|Fanta|2.00|330
+Soft drinks|Water|1.00|500
+Soft drinks|Sprite|1.90|330
+Soft drinks|Diet Coke|2.30|330
+Soft drinks|Fuzetea|2.60|330
+Soft drinks|Schweppes|2.60|330
+Hot drinks|Coffee|1.90|50
+Hot drinks|Cappuccino|2.20|60
+Hot drinks|Frappe|2.20|90
+Hot drinks|Tea|1.99|70
+Whiskey|Jack Daniels|7.00|50
+Whiskey|Bushmills|8.00|50
+Whiskey|Jameson|6.00|50
+Whiskey|Johnie Walker|5.50|50
+Whiskey|Jim Beam|7.50|50
+Whiskey|Gentlemen Jack|11.00|50
+Vodka|Russian standard|5.50|50
+Vodka|Smirnoff|5.00|50
+Vodka|Absolut|4.00|50
+Vodka|Belvedere|6.00|50
+Vodka|Grey goose|7.50|50
+Beer|Corona|6.00|330
+Beer|Stella Artois|2.00|330
+Beer|Heineken|4.50|500
+Beer|Zagorka|2.50|500
+Beer|Shumensko|6.50|330
