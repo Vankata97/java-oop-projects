@@ -6,7 +6,7 @@ import java.util.Locale;
 
 public class CommonUtil {
 
-  public static final String DATA_PATH = "JavaOOP/src/restaurant/data/";
+  public static final String DATA_PATH = "IndividualProjectRestaurant/src/restaurant/data/";
   public static final String PRODUCTS_FILE_NAME = "Products.txt";
   public static final String EMPLOYEES_FILE_NAME = "Employees.txt";
 
