@@ -1,0 +1,6 @@
+Bartender|Ivan|80
+Waiter|Kaloyan|50
+Waiter|Adrian|50
+Hygienist|Andrew Tate|15
+Hygienist|Tristan Tate|15
+Cook|Vivien|95

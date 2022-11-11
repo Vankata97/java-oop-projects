@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>E:/user/Desktop/GitHub/CodeAcademy/team-3</OriginalElement>
+  <nodes>
+    <node x="711.6666666666666" y="651.0">clients.Client</node>
+    <node x="593.5871393034823" y="1303.0">restaurant.Table</node>
+    <node x="1149.0871393034822" y="357.5">clients.Order</node>
+    <node x="0.0" y="0.0">storage.Storage</node>
+    <node x="1288.8371393034822" y="1714.0">staff.Waiter</node>
+    <node x="429.33713930348233" y="1012.0">restaurant.Bar</node>
+    <node x="180.1479850746266" y="269.0">restaurant.Menu</node>
+    <node x="1405.7166666666667" y="1380.0">staff.Cheff</node>
+    <node x="1727.1321890547263" y="1078.5">interfaces.Billable</node>
+    <node x="1035.8166666666666" y="1336.0">staff.Bartender</node>
+    <node x="1097.4666666666667" y="1023.0">staff.Staff</node>
+    <node x="599.1666666666666" y="1824.0">staff.Hostess</node>
+    <node x="344.0" y="22.0">storage.Item</node>
+    <node x="642.8371393034823" y="2139.0">restaurant.Restaurant</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="staff.Hostess" target="restaurant.Bar" relationship="DEPENDENCY">
+      <point x="-87.5" y="-71.5" />
+      <point x="686.6666666666666" y="1692.0" />
+      <point x="810.0871393034823" y="1692.0" />
+      <point x="810.0871393034823" y="1682.0" />
+      <point x="820.5871393034823" y="1682.0" />
+      <point x="820.5871393034823" y="1231.0" />
+      <point x="609.3371393034823" y="1231.0" />
+      <point x="72.0" y="93.5" />
+    </edge>
+    <edge source="staff.Waiter" target="restaurant.Table" relationship="TO_MANY">
+      <point x="-54.200000000000045" y="-181.5" />
+      <point x="1370.1371393034824" y="1692.0" />
+      <point x="1324.9666666666667" y="1692.0" />
+      <point x="1324.9666666666667" y="1662.0" />
+      <point x="701.6666666666666" y="1662.0" />
+      <point x="701.6666666666666" y="1652.0" />
+      <point x="696.5871393034823" y="1652.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="restaurant.Menu" target="storage.Item" relationship="CREATE">
+      <point x="-79.66666666666669" y="-149.0" />
+      <point x="219.98131840795986" y="228.0" />
+      <point x="387.5" y="228.0" />
+      <point x="-87.0" y="71.5" />
+    </edge>
+    <edge source="clients.Order" target="storage.Item" relationship="DEPENDENCY">
+      <point x="48.5" y="-60.5" />
+      <point x="1294.5871393034822" y="228.0" />
+      <point x="1210.9666666666667" y="228.0" />
+      <point x="1210.9666666666667" y="208.0" />
+      <point x="561.5" y="208.0" />
+      <point x="87.0" y="71.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="restaurant.Table" relationship="TO_MANY">
+      <point x="-118.66666666666669" y="-203.5" />
+      <point x="702.1704726368156" y="2118.0" />
+      <point x="97.23131840795998" y="2118.0" />
+      <point x="97.23131840795998" y="2108.0" />
+      <point x="102.23131840795998" y="2108.0" />
+      <point x="102.23131840795998" y="1682.0" />
+      <point x="701.6666666666666" y="1682.0" />
+      <point x="701.6666666666666" y="1652.0" />
+      <point x="696.5871393034823" y="1652.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="clients.Client" target="clients.Order" relationship="TO_ONE">
+      <point x="69.0" y="-148.5" />
+      <point x="884.1666666666666" y="599.0" />
+      <point x="1246.0871393034822" y="599.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="staff.Waiter" target="clients.Client" relationship="DEPENDENCY">
+      <point x="0.0" y="-181.5" />
+      <point x="1424.3371393034822" y="1692.0" />
+      <point x="1432.9058208955225" y="1692.0" />
+      <point x="1432.9058208955225" y="1622.0" />
+      <point x="1384.2166666666667" y="1622.0" />
+      <point x="1384.2166666666667" y="980.0" />
+      <point x="795.3321890547263" y="980.0" />
+      <point x="795.3321890547262" y="970.0" />
+      <point x="815.1666666666666" y="970.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="staff.Waiter" target="restaurant.Table" relationship="DEPENDENCY">
+      <point x="0.0" y="-181.5" />
+      <point x="1424.3371393034822" y="1692.0" />
+      <point x="1432.9058208955225" y="1692.0" />
+      <point x="1432.9058208955225" y="1652.0" />
+      <point x="721.1655223880596" y="1652.0" />
+      <point x="721.1655223880596" y="1642.0" />
+      <point x="765.253805970149" y="1642.0" />
+      <point x="68.66666666666669" y="148.5" />
+    </edge>
+    <edge source="staff.Bartender" target="restaurant.Bar" relationship="DEPENDENCY">
+      <point x="-105.60000000000002" y="-115.5" />
+      <point x="1062.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="1241.0" />
+      <point x="820.5871393034823" y="1241.0" />
+      <point x="820.5871393034823" y="1231.0" />
+      <point x="609.3371393034823" y="1231.0" />
+      <point x="72.0" y="93.5" />
+    </edge>
+    <edge source="clients.Order" target="storage.Item" relationship="TO_MANY">
+      <point x="-48.5" y="-60.5" />
+      <point x="1197.5871393034822" y="248.0" />
+      <point x="474.5" y="248.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="restaurant.Bar" relationship="TO_ONE">
+      <point x="-118.66666666666669" y="-203.5" />
+      <point x="702.1704726368156" y="2118.0" />
+      <point x="97.23131840795998" y="2118.0" />
+      <point x="97.23131840795998" y="2108.0" />
+      <point x="92.23131840795998" y="2108.0" />
+      <point x="92.23131840795998" y="1241.0" />
+      <point x="465.33713930348233" y="1241.0" />
+      <point x="-72.0" y="93.5" />
+    </edge>
+    <edge source="staff.Waiter" target="interfaces.Billable" relationship="REALIZATION">
+      <point x="108.39999999999998" y="-181.5" />
+      <point x="1532.7371393034823" y="1692.0" />
+      <point x="1679.2166666666667" y="1692.0" />
+      <point x="1679.2166666666667" y="1231.0" />
+      <point x="1788.1321890547263" y="1231.0" />
+      <point x="-61.0" y="27.0" />
+    </edge>
+    <edge source="staff.Cheff" target="storage.Item" relationship="DEPENDENCY">
+      <point x="87.66666666666674" y="-71.5" />
+      <point x="1624.8833333333334" y="1281.0" />
+      <point x="1754.6558208955225" y="1281.0" />
+      <point x="1754.6558208955225" y="1221.0" />
+      <point x="1981.6321890547263" y="1221.0" />
+      <point x="1981.6321890547263" y="228.0" />
+      <point x="1210.9666666666667" y="228.0" />
+      <point x="1210.9666666666667" y="208.0" />
+      <point x="561.5" y="208.0" />
+      <point x="87.0" y="71.5" />
+    </edge>
+    <edge source="staff.Waiter" target="clients.Order" relationship="TO_MANY">
+      <point x="-54.200000000000045" y="-181.5" />
+      <point x="1370.1371393034824" y="1692.0" />
+      <point x="1324.9666666666667" y="1692.0" />
+      <point x="1324.9666666666667" y="599.0" />
+      <point x="1246.0871393034822" y="599.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="staff.Bartender" target="storage.Item" relationship="DEPENDENCY">
+      <point x="-105.60000000000002" y="-115.5" />
+      <point x="1062.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="228.0" />
+      <point x="1210.9666666666667" y="228.0" />
+      <point x="1210.9666666666667" y="208.0" />
+      <point x="561.5" y="208.0" />
+      <point x="87.0" y="71.5" />
+    </edge>
+    <edge source="staff.Bartender" target="restaurant.Menu" relationship="CREATE">
+      <point x="-52.80000000000007" y="-115.5" />
+      <point x="1115.0166666666667" y="1271.0" />
+      <point x="1033.2166666666667" y="1271.0" />
+      <point x="1033.2166666666667" y="619.0" />
+      <point x="973.1479850746266" y="619.0" />
+      <point x="973.1479850746266" y="589.0" />
+      <point x="379.31465174129335" y="589.0" />
+      <point x="79.66666666666669" y="149.0" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="clients.Client" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="959.6666666666667" y="2108.0" />
+      <point x="959.6666666666667" y="970.0" />
+      <point x="884.1666666666666" y="970.0" />
+      <point x="69.0" y="148.5" />
+    </edge>
+    <edge source="restaurant.Bar" target="clients.Client" relationship="DEPENDENCY">
+      <point x="54.0" y="-93.5" />
+      <point x="591.3371393034823" y="980.0" />
+      <point x="795.3321890547262" y="980.0" />
+      <point x="795.3321890547262" y="970.0" />
+      <point x="815.1666666666666" y="970.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="staff.Cheff" target="clients.Order" relationship="DEPENDENCY">
+      <point x="87.66666666666674" y="-71.5" />
+      <point x="1624.8833333333334" y="1281.0" />
+      <point x="1754.6558208955225" y="1281.0" />
+      <point x="1754.6558208955225" y="1221.0" />
+      <point x="1700.7166666666667" y="1221.0" />
+      <point x="1700.7166666666667" y="589.0" />
+      <point x="1310.7538059701492" y="589.0" />
+      <point x="64.66666666666674" y="60.5" />
+    </edge>
+    <edge source="staff.Waiter" target="restaurant.Restaurant" relationship="DEPENDENCY">
+      <point x="67.75" y="181.5" />
+      <point x="1492.0871393034822" y="2098.0" />
+      <point x="1896.6716169154229" y="2098.0" />
+      <point x="1896.6716169154229" y="2118.0" />
+      <point x="939.503805970149" y="2118.0" />
+      <point x="118.66666666666663" y="-203.5" />
+    </edge>
+    <edge source="clients.Client" target="clients.Order" relationship="CREATE">
+      <point x="0.0" y="-148.5" />
+      <point x="815.1666666666666" y="609.0" />
+      <point x="983.1479850746266" y="609.0" />
+      <point x="983.1479850746266" y="589.0" />
+      <point x="1181.4204726368157" y="589.0" />
+      <point x="-64.66666666666663" y="60.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="restaurant.Table" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="569.1479850746266" y="2108.0" />
+      <point x="569.1479850746266" y="1672.0" />
+      <point x="627.9204726368157" y="1672.0" />
+      <point x="-68.66666666666669" y="148.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="restaurant.Menu" relationship="TO_ONE">
+      <point x="-118.66666666666669" y="-203.5" />
+      <point x="702.1704726368156" y="2118.0" />
+      <point x="97.23131840795998" y="2118.0" />
+      <point x="97.23131840795998" y="2108.0" />
+      <point x="81.73131840795998" y="2108.0" />
+      <point x="81.73131840795998" y="629.0" />
+      <point x="219.98131840795986" y="629.0" />
+      <point x="-79.66666666666669" y="149.0" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="restaurant.Menu" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="418.83713930348233" y="2108.0" />
+      <point x="418.83713930348233" y="619.0" />
+      <point x="973.1479850746267" y="619.0" />
+      <point x="973.1479850746266" y="589.0" />
+      <point x="379.31465174129335" y="589.0" />
+      <point x="79.66666666666669" y="149.0" />
+    </edge>
+    <edge source="staff.Hostess" target="clients.Client" relationship="DEPENDENCY">
+      <point x="-87.5" y="-71.5" />
+      <point x="686.6666666666666" y="1692.0" />
+      <point x="810.0871393034823" y="1692.0" />
+      <point x="810.0871393034823" y="980.0" />
+      <point x="795.3321890547262" y="980.0" />
+      <point x="795.3321890547262" y="970.0" />
+      <point x="815.1666666666666" y="970.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="restaurant.Table" target="clients.Client" relationship="TO_MANY">
+      <point x="-51.5" y="-148.5" />
+      <point x="645.0871393034823" y="1241.0" />
+      <point x="691.0871393034823" y="1241.0" />
+      <point x="691.0871393034823" y="990.0" />
+      <point x="552.1716169154228" y="990.0" />
+      <point x="552.1716169154228" y="970.0" />
+      <point x="746.1666666666666" y="970.0" />
+      <point x="-69.0" y="148.5" />
+    </edge>
+    <edge source="interfaces.Billable" target="restaurant.Restaurant" relationship="DEPENDENCY">
+      <point x="61.0" y="27.0" />
+      <point x="1910.1321890547263" y="1231.0" />
+      <point x="2002.1321890547263" y="1231.0" />
+      <point x="2002.1321890547263" y="2098.0" />
+      <point x="1896.6716169154229" y="2098.0" />
+      <point x="1896.6716169154229" y="2118.0" />
+      <point x="939.503805970149" y="2118.0" />
+      <point x="118.66666666666663" y="-203.5" />
+    </edge>
+    <edge source="staff.Bartender" target="restaurant.Restaurant" relationship="DEPENDENCY">
+      <point x="66.0" y="115.5" />
+      <point x="1233.8166666666666" y="1632.0" />
+      <point x="1577.3371393034822" y="1632.0" />
+      <point x="1577.3371393034822" y="1672.0" />
+      <point x="1724.8371393034822" y="1672.0" />
+      <point x="1724.8371393034822" y="2098.0" />
+      <point x="1896.6716169154229" y="2098.0" />
+      <point x="1896.6716169154229" y="2118.0" />
+      <point x="939.503805970149" y="2118.0" />
+      <point x="118.66666666666663" y="-203.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="clients.Client" relationship="TO_MANY">
+      <point x="-118.66666666666669" y="-203.5" />
+      <point x="702.1704726368156" y="2118.0" />
+      <point x="97.23131840795998" y="2118.0" />
+      <point x="97.23131840795998" y="2108.0" />
+      <point x="81.73131840795998" y="2108.0" />
+      <point x="81.73131840795998" y="990.0" />
+      <point x="552.1716169154228" y="990.0" />
+      <point x="552.1716169154228" y="970.0" />
+      <point x="746.1666666666666" y="970.0" />
+      <point x="-69.0" y="148.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="storage.Storage" relationship="TO_ONE">
+      <point x="-118.66666666666669" y="-203.5" />
+      <point x="702.1704726368156" y="2118.0" />
+      <point x="97.23131840795998" y="2118.0" />
+      <point x="97.23131840795998" y="2108.0" />
+      <point x="71.23131840795998" y="2108.0" />
+      <point x="71.23131840795998" y="248.0" />
+      <point x="54.0" y="248.0" />
+      <point x="-108.0" y="93.5" />
+    </edge>
+    <edge source="staff.Bartender" target="storage.Storage" relationship="DEPENDENCY">
+      <point x="-105.60000000000002" y="-115.5" />
+      <point x="1062.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="218.0" />
+      <point x="270.0" y="218.0" />
+      <point x="108.0" y="93.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="staff.Hostess" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="774.1666666666666" y="2108.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="clients.Client" target="restaurant.Menu" relationship="DEPENDENCY">
+      <point x="-69.0" y="-148.5" />
+      <point x="746.1666666666666" y="629.0" />
+      <point x="393.5821890547262" y="629.0" />
+      <point x="393.5821890547262" y="609.0" />
+      <point x="299.6479850746266" y="609.0" />
+      <point x="0.0" y="149.0" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="staff.Bartender" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="970.1666666666667" y="2108.0" />
+      <point x="970.1666666666667" y="1682.0" />
+      <point x="1101.8166666666666" y="1682.0" />
+      <point x="-66.0" y="115.5" />
+    </edge>
+    <edge source="staff.Cheff" target="storage.Storage" relationship="DEPENDENCY">
+      <point x="87.66666666666674" y="-71.5" />
+      <point x="1624.8833333333334" y="1281.0" />
+      <point x="1754.6558208955225" y="1281.0" />
+      <point x="1754.6558208955225" y="1221.0" />
+      <point x="1711.2166666666667" y="1221.0" />
+      <point x="1711.2166666666667" y="238.0" />
+      <point x="1022.2166666666667" y="238.0" />
+      <point x="1022.2166666666667" y="218.0" />
+      <point x="270.0" y="218.0" />
+      <point x="108.0" y="93.5" />
+    </edge>
+    <edge source="staff.Waiter" target="storage.Item" relationship="DEPENDENCY">
+      <point x="0.0" y="-181.5" />
+      <point x="1424.3371393034822" y="1692.0" />
+      <point x="1432.9058208955225" y="1692.0" />
+      <point x="1432.9058208955225" y="1622.0" />
+      <point x="1384.2166666666667" y="1622.0" />
+      <point x="1384.2166666666667" y="228.0" />
+      <point x="1210.9666666666667" y="228.0" />
+      <point x="1210.9666666666667" y="208.0" />
+      <point x="561.5" y="208.0" />
+      <point x="87.0" y="71.5" />
+    </edge>
+    <edge source="restaurant.Menu" target="storage.Storage" relationship="DEPENDENCY">
+      <point x="79.66666666666669" y="-149.0" />
+      <point x="379.31465174129335" y="238.0" />
+      <point x="1022.2166666666667" y="238.0" />
+      <point x="1022.2166666666667" y="218.0" />
+      <point x="270.0" y="218.0" />
+      <point x="108.0" y="93.5" />
+    </edge>
+    <edge source="staff.Cheff" target="clients.Order" relationship="TO_MANY">
+      <point x="0.0" y="-71.5" />
+      <point x="1537.2166666666667" y="1271.0" />
+      <point x="1689.7166666666667" y="1271.0" />
+      <point x="1689.7166666666667" y="599.0" />
+      <point x="1246.0871393034822" y="599.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="staff.Staff" relationship="TO_MANY">
+      <point x="-118.66666666666669" y="-203.5" />
+      <point x="702.1704726368156" y="2118.0" />
+      <point x="97.23131840795998" y="2118.0" />
+      <point x="97.23131840795998" y="2108.0" />
+      <point x="102.23131840795998" y="2108.0" />
+      <point x="102.23131840795998" y="1251.0" />
+      <point x="1133.6333333333332" y="1251.0" />
+      <point x="-72.33333333333337" y="82.5" />
+    </edge>
+    <edge source="staff.Hostess" target="restaurant.Table" relationship="DEPENDENCY">
+      <point x="-87.5" y="-71.5" />
+      <point x="686.6666666666666" y="1692.0" />
+      <point x="810.0871393034823" y="1692.0" />
+      <point x="810.0871393034823" y="1672.0" />
+      <point x="721.1655223880596" y="1672.0" />
+      <point x="721.1655223880596" y="1642.0" />
+      <point x="765.253805970149" y="1642.0" />
+      <point x="68.66666666666669" y="148.5" />
+    </edge>
+    <edge source="staff.Bartender" target="staff.Staff" relationship="GENERALIZATION">
+      <point x="52.799999999999955" y="-115.5" />
+      <point x="1220.6166666666668" y="1261.0" />
+      <point x="1205.9666666666667" y="1261.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="staff.Staff" relationship="DEPENDENCY">
+      <point x="118.66666666666663" y="-203.5" />
+      <point x="939.503805970149" y="2118.0" />
+      <point x="1896.6716169154229" y="2118.0" />
+      <point x="1896.6716169154229" y="2098.0" />
+      <point x="1992.1321890547263" y="2098.0" />
+      <point x="1992.1321890547263" y="1241.0" />
+      <point x="1278.3" y="1241.0" />
+      <point x="72.33333333333326" y="82.5" />
+    </edge>
+    <edge source="staff.Bartender" target="clients.Client" relationship="DEPENDENCY">
+      <point x="-105.60000000000002" y="-115.5" />
+      <point x="1062.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="1281.0" />
+      <point x="1022.2166666666667" y="980.0" />
+      <point x="795.3321890547262" y="980.0" />
+      <point x="795.3321890547262" y="970.0" />
+      <point x="815.1666666666666" y="970.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="staff.Cheff" target="staff.Staff" relationship="GENERALIZATION">
+      <point x="-87.66666666666674" y="-71.5" />
+      <point x="1449.55" y="1261.0" />
+      <point x="1205.9666666666667" y="1261.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="staff.Bartender" target="interfaces.Billable" relationship="REALIZATION">
+      <point x="105.60000000000002" y="-115.5" />
+      <point x="1273.4166666666667" y="1251.0" />
+      <point x="1679.2166666666667" y="1251.0" />
+      <point x="1679.2166666666667" y="1231.0" />
+      <point x="1788.1321890547263" y="1231.0" />
+      <point x="-61.0" y="27.0" />
+    </edge>
+    <edge source="staff.Waiter" target="staff.Bartender" relationship="DEPENDENCY">
+      <point x="0.0" y="-181.5" />
+      <point x="1424.3371393034822" y="1692.0" />
+      <point x="1432.9058208955225" y="1692.0" />
+      <point x="1432.9058208955225" y="1682.0" />
+      <point x="1577.3371393034822" y="1682.0" />
+      <point x="1577.3371393034822" y="1632.0" />
+      <point x="1233.8166666666666" y="1632.0" />
+      <point x="66.0" y="115.5" />
+    </edge>
+    <edge source="clients.Client" target="storage.Item" relationship="DEPENDENCY">
+      <point x="-69.0" y="-148.5" />
+      <point x="746.1666666666666" y="629.0" />
+      <point x="393.5821890547262" y="629.0" />
+      <point x="393.5821890547262" y="609.0" />
+      <point x="429.6479850746266" y="609.0" />
+      <point x="429.6479850746266" y="228.0" />
+      <point x="1210.9666666666667" y="228.0" />
+      <point x="1210.9666666666667" y="208.0" />
+      <point x="561.5" y="208.0" />
+      <point x="87.0" y="71.5" />
+    </edge>
+    <edge source="staff.Waiter" target="restaurant.Menu" relationship="CREATE">
+      <point x="-108.39999999999998" y="-181.5" />
+      <point x="1315.9371393034824" y="1692.0" />
+      <point x="999.2166666666667" y="1692.0" />
+      <point x="999.2166666666667" y="1642.0" />
+      <point x="994.2166666666667" y="1642.0" />
+      <point x="994.2166666666667" y="619.0" />
+      <point x="973.1479850746266" y="619.0" />
+      <point x="973.1479850746266" y="589.0" />
+      <point x="379.31465174129335" y="589.0" />
+      <point x="79.66666666666669" y="149.0" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="storage.Storage" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="113.23131840795998" y="2108.0" />
+      <point x="113.23131840795998" y="248.0" />
+      <point x="162.0" y="248.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="staff.Waiter" target="staff.Staff" relationship="GENERALIZATION">
+      <point x="54.200000000000045" y="-181.5" />
+      <point x="1478.5371393034825" y="1642.0" />
+      <point x="1395.2166666666667" y="1642.0" />
+      <point x="1395.2166666666667" y="1261.0" />
+      <point x="1205.9666666666667" y="1261.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="restaurant.Menu" target="storage.Item" relationship="TO_MANY">
+      <point x="0.0" y="-149.0" />
+      <point x="299.6479850746266" y="248.0" />
+      <point x="474.5" y="248.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="staff.Bartender" target="clients.Order" relationship="TO_MANY">
+      <point x="0.0" y="-115.5" />
+      <point x="1167.8166666666666" y="1241.0" />
+      <point x="1086.9666666666667" y="1241.0" />
+      <point x="1086.9666666666667" y="599.0" />
+      <point x="1246.0871393034822" y="599.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="restaurant.Bar" target="clients.Client" relationship="TO_MANY">
+      <point x="-54.0" y="-93.5" />
+      <point x="483.33713930348233" y="990.0" />
+      <point x="552.1716169154228" y="990.0" />
+      <point x="552.1716169154228" y="970.0" />
+      <point x="746.1666666666666" y="970.0" />
+      <point x="-69.0" y="148.5" />
+    </edge>
+    <edge source="restaurant.Table" target="clients.Client" relationship="DEPENDENCY">
+      <point x="51.5" y="-148.5" />
+      <point x="748.0871393034823" y="1241.0" />
+      <point x="702.0871393034823" y="1241.0" />
+      <point x="702.0871393034823" y="980.0" />
+      <point x="795.3321890547262" y="980.0" />
+      <point x="795.3321890547262" y="970.0" />
+      <point x="815.1666666666666" y="970.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="staff.Hostess" target="staff.Staff" relationship="GENERALIZATION">
+      <point x="87.5" y="-71.5" />
+      <point x="861.6666666666666" y="1692.0" />
+      <point x="831.5871393034823" y="1692.0" />
+      <point x="831.5871393034823" y="1261.0" />
+      <point x="1205.9666666666667" y="1261.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="staff.Cheff" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="1713.8371393034822" y="2108.0" />
+      <point x="1713.8371393034822" y="1682.0" />
+      <point x="1602.9666666666667" y="1682.0" />
+      <point x="65.75" y="71.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="restaurant.Bar" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="537.3371393034823" y="2108.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="staff.Waiter" target="clients.Order" relationship="CREATE">
+      <point x="-108.39999999999998" y="-181.5" />
+      <point x="1315.9371393034824" y="1692.0" />
+      <point x="999.2166666666667" y="1692.0" />
+      <point x="999.2166666666667" y="1642.0" />
+      <point x="1004.2166666666667" y="1642.0" />
+      <point x="1004.2166666666667" y="609.0" />
+      <point x="983.1479850746266" y="609.0" />
+      <point x="983.1479850746266" y="589.0" />
+      <point x="1181.4204726368157" y="589.0" />
+      <point x="-64.66666666666663" y="60.5" />
+    </edge>
+    <edge source="staff.Waiter" target="staff.Cheff" relationship="DEPENDENCY">
+      <point x="0.0" y="-181.5" />
+      <point x="1424.3371393034822" y="1692.0" />
+      <point x="1432.9058208955225" y="1692.0" />
+      <point x="1432.9058208955225" y="1622.0" />
+      <point x="1471.4666666666667" y="1622.0" />
+      <point x="-65.75" y="71.5" />
+    </edge>
+    <edge source="staff.Bartender" target="clients.Order" relationship="CREATE">
+      <point x="-52.80000000000007" y="-115.5" />
+      <point x="1115.0166666666667" y="1271.0" />
+      <point x="1033.2166666666667" y="1271.0" />
+      <point x="1033.2166666666667" y="609.0" />
+      <point x="983.1479850746266" y="609.0" />
+      <point x="983.1479850746266" y="589.0" />
+      <point x="1181.4204726368157" y="589.0" />
+      <point x="-64.66666666666663" y="60.5" />
+    </edge>
+    <edge source="restaurant.Restaurant" target="staff.Waiter" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="820.8371393034823" y="2108.0" />
+      <point x="1356.5871393034822" y="2108.0" />
+      <point x="-67.75" y="181.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4" showDependencies="true" x="1196.1985981308408" y="1815.75" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
